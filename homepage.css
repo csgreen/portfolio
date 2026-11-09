@@ -17,3 +17,6 @@
 .hero-portrait{width:190px;height:238px;object-fit:cover;object-position:center center;flex-shrink:0;border-radius:20px;box-shadow:0 12px 36px rgba(25,60,55,.10);border:5px solid #fefefa;transform:rotate(1.5deg)}
 @media(max-width:650px){.hero-intro{gap:18px;align-items:center}.hero-portrait{width:116px;height:146px;border-radius:14px;border-width:3px}.hero-intro .lede{font-size:1.03rem}.hero-intro .hero-sub{font-size:.92rem}}
 @media(max-width:390px){.hero-intro{align-items:flex-start}.hero-portrait{width:94px;height:118px}}
+
+/* Keep the full portrait visible at every breakpoint; no automatic face cropping. */
+.hero-portrait{object-fit:contain;object-position:center center;transform:none;background:#fefefa}
