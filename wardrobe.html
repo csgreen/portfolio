@@ -16,6 +16,9 @@
 .case-infographic figcaption{padding:12px 20px 17px;font-size:.82rem;color:var(--muted);line-height:1.55;border-top:1px solid var(--line)}
 .case-infographic figcaption a{font-weight:750;color:var(--green)}
 @media(max-width:560px){.case-infographic{margin-top:22px;border-radius:14px}.case-infographic figcaption{padding:14px}}
+/* The user-supplied graphic is the lead visual, not buried in the article. */
+.hero .case-infographic{margin:30px 0 34px}
+.hero .case-infographic img{width:100%;height:auto;object-fit:contain}
 </style>
 </head>
 <body>
@@ -30,6 +33,13 @@
     <h1>From conversation to system.</h1>
     <p class="sub">I wanted to spend less time sorting through information and more time making good decisions. So I tested what AI could do.</p>
     <p class="meta">Applied AI · Product thinking · Human judgment</p>
+
+<figure class="case-infographic">
+  <a href="assets/ai-decision-assistant-graphic.webp?v=20261110b" target="_blank" rel="noopener" aria-label="Open the AI Decision Assistant graphic at full size">
+    <img src="assets/ai-decision-assistant-graphic.webp?v=20261110b" alt="AI Decision Assistant: wardrobe, personal style, preferences, context, weather, and style guidance feed a system that organizes data, applies rules, finds options, and visualizes complete looks. The output illustrates faster, more consistent decisions." width="1600" height="800" loading="eager">
+  </a>
+  <figcaption>The system I tested, from inputs to recommendations. The benefits shown are goals and observations, not measured performance results. <a href="assets/ai-decision-assistant-graphic.webp?v=20261110b" target="_blank" rel="noopener">View the full-size graphic ↗</a></figcaption>
+</figure>
 
     <div class="summary">
       <article class="summary-card">
@@ -55,12 +65,7 @@
     <h2>Start with something real.</h2>
     <p class="intro">I used <strong>personal presentation</strong> as my test case. It was small enough to try things quickly, but complex enough to be interesting: changing plans, real constraints, visual choices, and lots of scattered information.</p>
 
-    <figure class="case-infographic">
-  <a href="assets/ai-decision-assistant-graphic.webp" target="_blank" rel="noopener" aria-label="Open the AI Decision Assistant graphic at full size">
-    <img src="assets/ai-decision-assistant-graphic.webp" alt="AI Decision Assistant: wardrobe, personal style, preferences, context, weather, and style guidance feed a system that organizes data, applies rules, finds options, and visualizes complete looks. The output illustrates faster, more consistent decisions." width="1600" height="800" loading="eager">
-  </a>
-  <figcaption>The system I tested, from inputs to recommendations. The benefits shown are goals and observations, not measured performance results. <a href="assets/ai-decision-assistant-graphic.webp" target="_blank" rel="noopener">View the full-size graphic ↗</a></figcaption>
-</figure>
+    
   </section>
 
   <section class="section">
