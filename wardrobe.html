@@ -19,6 +19,23 @@
 /* The user-supplied graphic is the lead visual, not buried in the article. */
 .hero .case-infographic{margin:30px 0 34px}
 .hero .case-infographic img{width:100%;height:auto;object-fit:contain}
+
+/* AI fluency and product-lifecycle illustrations live in the page, not inside the graphic. */
+.fluency-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:28px 0 22px}
+.fluency-grid article{padding:25px 26px;background:var(--paper);border:1px solid var(--line);border-radius:18px}
+.fluency-num{font-weight:850;letter-spacing:.15em;color:var(--terra);font-size:.74rem}
+.fluency-grid h3{font-size:1.12rem;margin:13px 0 8px}
+.fluency-grid p{color:var(--muted);margin:0;font-size:.96rem}
+.scope-note{max-width:900px;color:var(--muted);font-size:.91rem;margin:24px 0 0}
+.lifecycle{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:34px 0 16px}
+.lifecycle article{background:#f7faf6;padding:17px 14px 21px;border:1px solid var(--line);border-radius:16px;min-width:0}
+.stage-symbol{display:flex;align-items:center;justify-content:center;width:43px;height:43px;border-radius:50%;background:#e4eee5;color:#3d7161;font-size:1.35rem;font-weight:750;letter-spacing:-.05em;margin-bottom:18px}
+.lifecycle article:nth-child(3n) .stage-symbol{background:#f3e6d9;color:#b36a4d}
+.lifecycle h3{font-size:1.03rem;margin:0 0 9px}
+.lifecycle p{font-size:.83rem;line-height:1.5;color:var(--muted);margin:0}
+#applications .bottom{margin-top:38px}
+@media(max-width:900px){.lifecycle{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:570px){.fluency-grid{grid-template-columns:1fr}.lifecycle{grid-template-columns:repeat(2,minmax(0,1fr))}.lifecycle article{padding:16px 13px}.stage-symbol{margin-bottom:13px}}
 </style>
 </head>
 <body>
@@ -126,23 +143,36 @@
     </div>
   </section>
 
-  <section class="section">
-    <p class="eyebrow">Why it matters</p>
-    <h2>A small test of a bigger idea.</h2>
+  <section class="section" id="ai-fluency">
+    <p class="eyebrow">What the experiment demonstrates</p>
+    <h2>AI fluency, built through practice.</h2>
+    <p class="intro">I used AI as a product-building partner—not just a way to generate answers. The work was in designing the inputs, testing the output, spotting failure modes, and deciding where a human should stay in control.</p>
+    <div class="fluency-grid">
+      <article><span class="fluency-num">01</span><h3>Grounding &amp; data reliability</h3><p>Move important records into an editable source of truth, rather than relying on conversational recall alone.</p></article>
+      <article><span class="fluency-num">02</span><h3>Context &amp; state</h3><p>Separate persistent preferences from things that change, like availability, timing, or new constraints.</p></article>
+      <article><span class="fluency-num">03</span><h3>Human-in-the-loop design</h3><p>Make suggestions explainable and easy to correct. Keep the final decision with the person using the system.</p></article>
+      <article><span class="fluency-num">04</span><h3>Evaluation through use</h3><p>Use real errors to improve the workflow. Next, add repeatable measures of accuracy, relevance, and decision time.</p></article>
+    </div>
+    <p class="scope-note"><strong>Current scope:</strong> a working ChatGPT + Google Sheets workflow with manual review. Automated synchronization, formal evaluation, and autonomous actions remain future opportunities.</p>
+  </section>
+  <section class="section" id="applications">
+    <p class="eyebrow">Where this pattern can help</p>
+    <h2>Useful across the product lifecycle.</h2>
+    <p class="intro">The same ingredients—scattered evidence, expert rules, changing context, and human decisions—show up throughout product work and the software development lifecycle.</p>
+    <div class="lifecycle">
+      <article><span class="stage-symbol">⌕</span><h3>Discover</h3><p>Synthesize research, customer signals, and support themes.</p></article>
+      <article><span class="stage-symbol">≡</span><h3>Prioritize</h3><p>Compare opportunities against goals, constraints, and evidence.</p></article>
+      <article><span class="stage-symbol">✎</span><h3>Design</h3><p>Surface requirements, patterns, and relevant guidance.</p></article>
+      <article><span class="stage-symbol">&lt;/&gt;</span><h3>Build</h3><p>Bring specs, technical context, and standards into decisions.</p></article>
+      <article><span class="stage-symbol">↗</span><h3>Launch</h3><p>Check readiness against dependencies and agreed criteria.</p></article>
+      <article><span class="stage-symbol">↻</span><h3>Iterate</h3><p>Use feedback and performance signals to refine the next choice.</p></article>
+    </div>
+    <p class="scope-note">These are <strong>potential applications of the decision-support pattern</strong>, not claims that this prototype has been deployed across those stages.</p>
     <div class="bottom">
-      <article class="bottom-card">
-        <p class="eyebrow">What this became</p>
-        <h3>A useful working workflow</h3>
-        <p>I now have a working way to bring information together, ask for options, and see why they fit. It still needs my judgment. I haven’t measured time saved or recommendation quality yet.</p>
-      </article>
-      <article class="bottom-card">
-        <p class="eyebrow">Where this applies</p>
-        <h3>The broader opportunity</h3>
-        <p>Workplace decisions have the same challenge: information in too many places and important details that change. I’m interested in AI that helps people do their jobs with less friction—without taking away their judgment.</p>
-      </article>
+      <article class="bottom-card"><p class="eyebrow">The result today</p><h3>A useful working workflow</h3><p>I can bring information together, compare options, and see why a recommendation fits. I still review the result, and I haven’t yet measured time saved or recommendation quality.</p></article>
+      <article class="bottom-card"><p class="eyebrow">The product opportunity</p><h3>Less busywork. Better judgment.</h3><p>Good decision support makes expertise available when people need it. It should make teams more effective without hiding uncertainty or taking away their agency.</p></article>
     </div>
   </section>
-
   <footer class="foot">
     <span>Christina Green · Independent AI product case study · 2026</span>
     <a href="index.html">Explore the portfolio →</a>
