@@ -1,11 +1,164 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="From Conversation to System: Building an AI Decision Assistant — a product case study by Christina Green."><title>From Conversation to System | Christina Green</title><style>
-:root{--ink:#193b3e;--muted:#526669;--accent:#b75c3b;--paper:#fbfaf6;--line:#dce3df;--sage:#e7efea;--white:#fff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.62 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}.wrap{max-width:1050px;margin:auto;padding:0 35px}.nav{display:flex;justify-content:space-between;gap:18px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}.nav a{text-decoration:none;font-weight:750}.nav .back{font-size:.88rem;color:var(--muted)}.hero{padding:62px 0 43px}.kicker{font-size:.73rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:850;margin:0 0 17px}.hero h1{font-size:clamp(2.65rem,5.5vw,4.6rem);line-height:1.06;letter-spacing:-.065em;max-width:910px;margin:0 0 22px}.sub{font-size:1rem;color:var(--muted);margin:0 0 15px}.tags{font-size:.85rem;color:#58726d;font-weight:650}.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:42px;align-items:start;margin-top:28px}.hero-grid p{font-size:1.1rem;color:#375356}.thesis{background:var(--ink);color:#fff;padding:25px 28px;border-top:4px solid var(--accent)}.thesis .mini{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:#e8ad95;font-weight:850}.thesis p{font-size:1.14rem;color:white;line-height:1.5;margin:11px 0 0}.section{border-top:1px solid var(--line);padding:37px 0}.section-head{display:grid;grid-template-columns:215px 1fr;gap:30px}.section-head h2{font-size:1.8rem;line-height:1.13;letter-spacing:-.045em;margin:0}.section-head .body p:first-child{margin-top:0}.body p{margin-bottom:12px}.body p:last-child{margin-bottom:0}.label{font-size:.71rem;text-transform:uppercase;letter-spacing:.13em;color:var(--accent);font-weight:850;margin-bottom:8px}.process{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-top:23px}.step{padding:18px 15px;background:var(--white);border:1px solid var(--line);border-top:3px solid var(--accent)}.step .num{font-size:.78rem;font-weight:900;color:var(--accent)}.step h3{font-size:.98rem;line-height:1.22;margin:10px 0 8px}.step p{font-size:.84rem;color:var(--muted);line-height:1.45;margin:0}.decision-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:11px;margin-top:20px}.decision{padding:17px 20px;background:white;border:1px solid var(--line)}.decision h3{font-size:.96rem;line-height:1.25;margin:0 0 7px}.decision p{font-size:.88rem;color:var(--muted);margin:0}.decision:last-child{grid-column:span 2;background:var(--sage)}.learning{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:21px}.learning article{padding:20px;background:var(--sage)}.learning h3{font-size:1rem;margin:0 0 8px}.learning p{font-size:.9rem;margin:0;color:#49635f}.outcome{background:var(--ink);color:white;padding:32px;margin:30px 0}.outcome h2{font-size:1.7rem;letter-spacing:-.04em;margin:0 0 12px}.outcome p{color:#d9e6e1;margin:0 0 11px}.outcome p:last-child{margin:0}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:34px}.bottom h2{font-size:1.5rem;letter-spacing:-.04em;margin:0 0 10px}.bottom p{color:var(--muted)}.future{border-left:3px solid var(--accent);padding-left:22px}.foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:22px 0 40px;font-size:.82rem;color:var(--muted)}.foot a{font-weight:750}@media(max-width:850px){.hero-grid,.section-head,.bottom{grid-template-columns:1fr}.process{grid-template-columns:repeat(2,1fr)}.section-head{gap:13px}.hero{padding-top:43px}}@media(max-width:560px){.wrap{padding:0 20px}.process,.decision-grid,.learning{grid-template-columns:1fr}.decision:last-child{grid-column:auto}.hero h1{font-size:2.65rem}.foot{flex-direction:column}}@media print{@page{size:letter;margin:.4in}body{font-size:10px;line-height:1.33;-webkit-print-color-adjust:exact;print-color-adjust:exact}.wrap{max-width:none;padding:0}.nav,.foot{display:none}.hero{padding:0 0 13px}.hero h1{font-size:28px;margin-bottom:8px}.kicker{margin-bottom:6px}.sub{margin-bottom:4px}.hero-grid{grid-template-columns:1.4fr .6fr;margin-top:8px;gap:14px}.hero-grid p{font-size:10px}.thesis{padding:10px 12px}.thesis p{font-size:11px}.section{padding:10px 0}.section-head{grid-template-columns:130px 1fr;gap:15px}.section-head h2{font-size:16px}.body p{margin-bottom:5px}.process{grid-template-columns:repeat(5,1fr);gap:5px;margin-top:9px}.step{padding:7px}.step h3{font-size:10px;margin:4px 0}.step p{font-size:8px}.decision-grid{gap:5px;margin-top:7px}.decision{padding:7px}.decision h3{font-size:9px;margin-bottom:3px}.decision p{font-size:8px}.learning{gap:5px;margin-top:7px}.learning article{padding:8px}.learning h3{font-size:9px;margin-bottom:3px}.learning p{font-size:8px}.outcome{margin:10px 0;padding:12px}.outcome h2{font-size:15px}.bottom{gap:15px}.bottom h2{font-size:14px}.label{margin-bottom:3px}.tags{font-size:9px}}
-</style></head><body><div class="wrap"><nav class="nav"><a href="index.html">Christina Green<span style="color:var(--accent)">.</span></a><a class="back" href="index.html#building">← Back to portfolio</a></nav>
-<header class="hero"><p class="kicker">Independent AI Product Exploration · July–November 2026</p><h1>From Conversation to System:<br>Building an AI Decision Assistant</h1><p class="tags">Product strategy · Applied AI · Decision intelligence · Personalization · Data integration</p><div class="hero-grid"><div><p><strong>The opportunity.</strong> Many everyday decisions take more time and mental effort than they should. The information needed to make a good decision often exists, but it is scattered across sources, difficult to recall, or hard to evaluate together.</p><p>I explored how AI could bring together multiple data sources, apply relevant knowledge and rules, visualize options, and help people make better decisions faster.</p></div><aside class="thesis"><div class="mini">Product hypothesis</div><p>A context-aware AI assistant could reduce decision time while improving the quality and consistency of the outcome.</p></aside></div></header>
-<section class="section" aria-labelledby="architecture-title"><p class="label">System at a glance</p><h2 id="architecture-title" style="font-size:1.8rem;letter-spacing:-.04em;margin:0 0 11px">How the AI decision assistant works</h2><p style="color:var(--muted);max-width:780px;margin:0 0 16px">A practical architecture for turning fragmented inputs into grounded recommendations. The source of truth and human correction loop are central—not afterthoughts.</p><figure style="margin:0"><img src="assets/ai-decision-architecture.svg" alt="Four stages: collect records, images and context; reconcile against an editable source of truth; apply rules through ChatGPT; recommend explainable options for human review. Feedback updates the data and rules. Current implementation uses ChatGPT, Google Sheets and manual review; automation is future work." style="display:block;width:100%;height:auto;border-radius:12px" loading="eager"><figcaption style="font-size:.82rem;color:var(--muted);margin-top:10px">Workflow architecture, not a production software diagram. Current prototype components are distinguished from the future automation roadmap.</figcaption></figure></section><section class="section"><div class="section-head"><div><p class="label">01 / Test case</p><h2>A real decision problem</h2></div><div class="body"><p>I chose <strong>personal presentation</strong> as the test case. How I present myself is part of my personal and professional brand, but consistent choices require balancing available options, context, established guidelines, and individual preferences.</p><p>Even as a visual thinker, I found it difficult to picture how separate elements would work together or remember which combinations and conventions worked best. The goal was not a styling tool for its own sake, but a reusable approach to reducing decision friction.</p></div></div></section>
-<section class="section"><div class="section-head"><div><p class="label">02 / My approach</p><h2>Prototype in real use</h2></div><div class="body"><p>I used ChatGPT as a rapid prototyping environment, developing the experience through real-world use instead of building standalone software upfront. Each iteration addressed a specific weakness in the decision process.</p></div></div><div class="process"><article class="step"><span class="num">01</span><h3>Model the decision</h3><p>Identify available assets, preferences, guidelines, fit, context, and practical constraints; translate them into reusable rules.</p></article><article class="step"><span class="num">02</span><h3>Integrate information</h3><p>Bring together records, images, purchase history, expert color analysis, weather, and activities.</p></article><article class="step"><span class="num">03</span><h3>Make expertise actionable</h3><p>Explain guidelines, suggest complete solutions, and use visuals to evaluate combinations.</p></article><article class="step"><span class="num">04</span><h3>Improve reliability</h3><p>Address stale memory and inaccurate references with an editable Google Sheets master inventory.</p></article><article class="step"><span class="num">05</span><h3>Iterate from failures</h3><p>Refine accuracy, relevance, variety, and visual fidelity based on observed use and corrections.</p></article></div></section>
-<section class="section"><div class="section-head"><div><p class="label">03 / Key product decisions</p><h2>Trust before autonomy</h2></div><div class="body"><p><strong>Prototype first.</strong> Validate the problem with ChatGPT before investing in standalone software.</p><p><strong>Unify inputs and externalize rules.</strong> Bring together records, images, expert guidance, and context so knowledge becomes actionable rather than something a user must repeatedly recall.</p><p><strong>Establish a source of truth.</strong> Use an editable master inventory to address stale conversational state and ambiguous references.</p><p><strong>Keep humans in control.</strong> Optimize recommendation quality, explanation, and feedback before introducing autonomous actions.</p></div></div></section>
-<section class="section"><div class="section-head"><div><p class="label">04 / What I learned</p><h2>Useful AI is more than answers</h2></div><div class="body"><p>The most important insight: AI creates value when it turns fragmented information and specialized knowledge into decisions people can act on with confidence.</p></div></div><div class="learning"><article><h3>Data reliability</h3><p>Recommendations are only as useful as the information they are grounded in.</p></article><article><h3>Context & state</h3><p>Systems must distinguish lasting preferences, temporary conditions, and changes over time.</p></article><article><h3>Human-centered interaction</h3><p>Explanations and visualizations build confidence and preserve user control.</p></article></div></section>
-<div class="outcome"><p class="label" style="color:#e8ad95">05 / Outcome</p><h2>A working personalized decision-support workflow</h2><p>I combined structured inventory data, visual references, contextual inputs, and reusable decision guidelines to translate scattered information into practical recommendations—reducing the need to repeatedly recall rules or manually evaluate combinations.</p><p><strong>Next:</strong> measure decision time and recommendation quality, improve data synchronization, and introduce carefully scoped automation.</p></div>
-<section class="section bottom"><div><p class="label">Longer-term vision</p><h2>From assistant to agentic system</h2><p>Build toward an agentic experience that could retrieve context, reconcile information, evaluate options, and propose actions with appropriate human oversight. The current project is a working AI-assisted workflow, not a deployed autonomous agent.</p></div><div class="future"><p class="label">Broader application</p><h2>Enterprise decision intelligence</h2><p>Employees face similar challenges: fragmented data, specialized knowledge, complex rules, and limited time. The opportunity is to reduce cognitive load, make expertise accessible at the point of decision, and improve efficiency and outcomes while preserving accuracy, transparency, and control.</p></div></section><footer class="foot"><span>Christina Green · Independent AI product case study · 2026</span><a href="index.html">Explore the portfolio →</a></footer></div></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="From Conversation to System: a simple case study on building an AI decision assistant.">
+<title>From Conversation to System | Christina Green</title>
+<style>
+:root{--bg:#f8f8f3;--paper:#fffefa;--ink:#183c39;--muted:#60746f;--line:#dbe4dd;--green:#3d7161;--sage:#e8efe8;--terra:#c88367;--sand:#f3eee3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.62 system-ui,-apple-system,Segoe UI,sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible{outline:3px solid var(--terra);outline-offset:3px}h1,h2,h3,p{margin-top:0}h1,h2,h3{letter-spacing:-.055em;line-height:1.1;font-weight:650}.wrap{max-width:1080px;margin:auto;padding:0 28px}.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0;border-bottom:1px solid var(--line)}.nav a{text-decoration:none;font-weight:760}.nav .back{font-size:.88rem;color:var(--muted)}.eyebrow{text-transform:uppercase;letter-spacing:.17em;font-size:.73rem;color:var(--green);font-weight:850}.hero{padding:60px 0 42px}.hero h1{font-size:clamp(2.8rem,6vw,5.3rem);max-width:860px;margin:14px 0 18px}.hero .sub{font-size:1.15rem;color:#4f6761;max-width:760px}.meta{margin-top:16px;font-size:.84rem;color:#6d837b;font-weight:650}.summary{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}.summary-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}.summary-card h3{font-size:1.05rem;margin:10px 0 10px}.summary-card p{margin:0;color:var(--muted)}.section{padding:74px 0;border-top:1px solid var(--line)}.section h2{font-size:clamp(2rem,4vw,3.2rem);margin-bottom:14px}.intro{max-width:720px;color:var(--muted);font-size:1.05rem}.split-visual{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}.state{border-radius:22px;padding:22px;border:1px solid var(--line);background:var(--paper)}.state.before{background:linear-gradient(160deg,#fbfaf5,#f3eee4)}.state.after{background:linear-gradient(160deg,#f9fbf8,#e9f1eb)}.state-top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}.state-top h3{font-size:1.25rem;margin:0}.pill{padding:6px 11px;border-radius:999px;font-size:.72rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.before .pill{background:#f4e4d7;color:#9d5d43}.after .pill{background:#dfece2;color:#2f6657}.messy-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.mini-card{background:#fff;border:1px solid #e3e5de;border-radius:14px;padding:14px;min-height:92px}.mini-card small{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#8b857a;font-weight:800;margin-bottom:8px}.mini-card p{font-size:.88rem;color:#64736d;margin:0;line-height:1.42}.messy-note{margin-top:14px;font-size:.92rem;color:#786f66}.decision-panel{background:#fff;border:1px solid #d5e4d8;border-radius:16px;padding:18px 18px 16px}.decision-panel .title{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}.decision-panel h4{font-size:1.1rem;margin:0 0 4px}.decision-panel p{margin:0;color:var(--muted)}.confidence{font-size:.74rem;font-weight:800;color:#3d7161;background:#e8f1ea;border-radius:999px;padding:6px 10px;white-space:nowrap}.reasons{display:grid;gap:10px;margin-top:16px}.reason{display:flex;gap:11px;align-items:flex-start;background:#f7faf7;border-radius:12px;padding:12px 13px}.dot{width:11px;height:11px;border-radius:50%;background:var(--green);margin-top:6px;flex:0 0 auto}.reason strong{display:block;font-size:.9rem;margin-bottom:3px}.reason span{font-size:.86rem;color:var(--muted);line-height:1.45}.feedback{margin-top:14px;padding-top:14px;border-top:1px solid #d9e6dd;font-size:.88rem;color:#536a64}.three-up{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:28px}.simple-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}.simple-card h3{font-size:1.1rem;margin:10px 0}.simple-card p{margin:0;color:var(--muted)}.simple-card .num{font-size:.76rem;color:var(--terra);font-weight:850;letter-spacing:.11em}.change-list{display:grid;gap:14px;margin-top:28px}.change{display:grid;grid-template-columns:1.1fr 46px 1.2fr;gap:18px;align-items:stretch}.change-side{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px 19px}.change-side h3{font-size:1rem;margin:0 0 8px}.change-side p{margin:0;color:var(--muted)}.change-side.before{background:#fcfaf6}.change-side.after{background:#f7fbf8;border-color:#d3e4d8}.arrowbox{display:flex;align-items:center;justify-content:center;color:#66877b;font-size:1.6rem;font-weight:700}.callout{margin-top:24px;background:var(--ink);color:#fff;border-radius:22px;padding:26px 28px}.callout .eyebrow{color:#e2b8a4}.callout h3{font-size:1.55rem;margin:10px 0 10px}.callout p{margin:0;color:#d7e5e0;max-width:760px}.bottom{display:grid;grid-template-columns:1fr 1fr;gap:26px}.bottom-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:24px}.bottom-card h3{font-size:1.2rem;margin:10px 0}.bottom-card p{margin:0;color:var(--muted)}.foot{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--line);padding:24px 0 42px;font-size:.84rem;color:var(--muted)}.foot a{font-weight:760}@media(max-width:860px){.summary,.split-visual,.three-up,.bottom{grid-template-columns:1fr}.change{grid-template-columns:1fr}.arrowbox{padding:0;font-size:1.2rem}.arrowbox{font-size:0}.arrowbox::before{content:"↓";font-size:1.2rem}}@media(max-width:560px){.wrap{padding:0 20px}.hero{padding:42px 0 26px}.section{padding:58px 0}.nav{align-items:flex-start;flex-direction:column;gap:10px}.foot{flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="nav">
+    <a href="index.html">Christina Green<span style="color:var(--terra)">.</span></a>
+    <a class="back" href="index.html#building">← Back to portfolio</a>
+  </nav>
+
+  <header class="hero">
+    <p class="eyebrow">Independent AI product exploration · 2026</p>
+    <h1>From conversation to system.</h1>
+    <p class="sub">I wanted to spend less time sorting through information and more time making good decisions. So I tested what AI could do.</p>
+    <p class="meta">Applied AI · Product thinking · Human judgment</p>
+
+    <div class="summary">
+      <article class="summary-card">
+        <p class="eyebrow">The problem</p>
+        <h3>Too much information. Too much effort.</h3>
+        <p>I had good information, but it was scattered. I kept having to remember rules and piece things together.</p>
+      </article>
+      <article class="summary-card">
+        <p class="eyebrow">What I built</p>
+        <h3>A working experiment, not a polished app.</h3>
+        <p>I used ChatGPT and a Google Sheets inventory, then tested the results in everyday decisions.</p>
+      </article>
+      <article class="summary-card">
+        <p class="eyebrow">What mattered</p>
+        <h3>Getting it right mattered most.</h3>
+        <p>A useful answer needs accurate information, a clear explanation, and room for a person to say, “That’s not right.”</p>
+      </article>
+    </div>
+  </header>
+
+  <section class="section">
+    <p class="eyebrow">The experiment</p>
+    <h2>Start with something real.</h2>
+    <p class="intro">I used <strong>personal presentation</strong> as my test case. It was small enough to try things quickly, but complex enough to be interesting: changing plans, real constraints, visual choices, and lots of scattered information.</p>
+
+    <div class="split-visual">
+      <article class="state before">
+        <div class="state-top"><h3>Before</h3><span class="pill">Scattered inputs</span></div>
+        <div class="messy-grid">
+          <div class="mini-card"><small>Inventory</small><p>What I own now, not just what I bought.</p></div>
+          <div class="mini-card"><small>Preferences</small><p>Fit, comfort, personal style, and what I actually reach for.</p></div>
+          <div class="mini-card"><small>Guidelines</small><p>Color analysis, styling conventions, and learned rules.</p></div>
+          <div class="mini-card"><small>Context</small><p>Weather, activities, time, and what the day calls for.</p></div>
+        </div>
+        <p class="messy-note">I knew the pieces. Putting them together was the work.</p>
+      </article>
+
+      <article class="state after">
+        <div class="state-top"><h3>After</h3><span class="pill">Decision support</span></div>
+        <div class="decision-panel">
+          <div class="title">
+            <div>
+              <h4>Recommended option</h4>
+              <p>An option I can understand and adjust.</p>
+            </div>
+            <span class="confidence">Human review</span>
+          </div>
+          <div class="reasons">
+            <div class="reason"><span class="dot"></span><div><strong>Uses current inventory</strong><span>Not what I bought last year or already ruled out.</span></div></div>
+            <div class="reason"><span class="dot"></span><div><strong>Applies reusable rules</strong><span>Good guidance is only useful if I can apply it.</span></div></div>
+            <div class="reason"><span class="dot"></span><div><strong>Accounts for context</strong><span>The right answer depends on what’s happening today.</span></div></div>
+          </div>
+          <div class="feedback"><strong>My role:</strong> Check the suggestion, explain what missed the mark, and correct the information behind it.</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">What I built</p>
+    <h2>Build, use, learn.</h2>
+    <p class="intro">I started with the tools I had. Each time something went wrong, I looked for a practical fix.</p>
+    <div class="three-up">
+      <article class="simple-card">
+        <div class="num">01</div>
+        <h3>Understand the decision</h3>
+        <p>Figure out what matters, what changes, and what can’t be ignored.</p>
+      </article>
+      <article class="simple-card">
+        <div class="num">02</div>
+        <h3>Bring the pieces together</h3>
+        <p>Put records, images, and helpful rules within reach.</p>
+      </article>
+      <article class="simple-card">
+        <div class="num">03</div>
+        <h3>Pay attention to mistakes</h3>
+        <p>Notice where the answer fails, ask why, and change the workflow.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">What broke — and what changed</p>
+    <h2>The mistakes shaped the product.</h2>
+    <p class="intro">Each wrong answer told me what the system was missing.</p>
+
+    <div class="change-list">
+      <div class="change">
+        <div class="change-side before"><h3>Problem</h3><p>The assistant sometimes used outdated information.</p></div>
+        <div class="arrowbox">→</div>
+        <div class="change-side after"><h3>Change</h3><p>Keep a Google Sheets inventory I can check and update.</p></div>
+      </div>
+      <div class="change">
+        <div class="change-side before"><h3>Problem</h3><p>Generated visuals sometimes showed the wrong items.</p></div>
+        <div class="arrowbox">→</div>
+        <div class="change-side after"><h3>Change</h3><p>Use photos of the real items wherever possible.</p></div>
+      </div>
+      <div class="change">
+        <div class="change-side before"><h3>Problem</h3><p>A good suggestion one day could be wrong the next.</p></div>
+        <div class="arrowbox">→</div>
+        <div class="change-side after"><h3>Change</h3><p>Check current plans, weather, and temporary constraints.</p></div>
+      </div>
+      <div class="change">
+        <div class="change-side before"><h3>Problem</h3><p>It was tempting to automate more before the recommendations were dependable.</p></div>
+        <div class="arrowbox">→</div>
+        <div class="change-side after"><h3>Change</h3><p>Keep a person in charge until the basics are reliable.</p></div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <p class="eyebrow">What stayed with me</p>
+      <h3>An answer is only useful if you can trust it.</h3>
+      <p>The best improvements weren’t flashy. They helped me notice errors, make corrections, and choose with more confidence.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="eyebrow">Why it matters</p>
+    <h2>A small test of a bigger idea.</h2>
+    <div class="bottom">
+      <article class="bottom-card">
+        <p class="eyebrow">What this became</p>
+        <h3>A useful working workflow</h3>
+        <p>I now have a working way to bring information together, ask for options, and see why they fit. It still needs my judgment. I haven’t measured time saved or recommendation quality yet.</p>
+      </article>
+      <article class="bottom-card">
+        <p class="eyebrow">Where this applies</p>
+        <h3>The broader opportunity</h3>
+        <p>Workplace decisions have the same challenge: information in too many places and important details that change. I’m interested in AI that helps people do their jobs with less friction—without taking away their judgment.</p>
+      </article>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <span>Christina Green · Independent AI product case study · 2026</span>
+    <a href="index.html">Explore the portfolio →</a>
+  </footer>
+</div>
+</body>
+</html>
