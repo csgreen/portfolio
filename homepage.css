@@ -20,3 +20,34 @@
 
 /* Keep the full portrait visible at every breakpoint; no automatic face cropping. */
 .hero-portrait{object-fit:contain;object-position:center center;transform:none;background:#fefefa}
+
+/* Editorial pacing: chapters, breathing room, and distinct visual rhythms */
+.chapter-cue{padding:20px 0;background:var(--bg)}
+.chapter-cue .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid #cfdcd0;padding-top:23px}
+.chapter-cue span:first-child{font-size:.7rem;letter-spacing:.18em;font-weight:850;color:#4a796a}
+.chapter-cue span:last-child{font-size:.82rem;color:#82958a}
+#approach{padding-top:67px;padding-bottom:118px}
+#approach .heading{margin-bottom:50px}
+#approach .three{gap:22px}
+#approach .value{padding:40px 34px 44px;border-radius:21px}
+.voices{padding-top:95px;padding-bottom:102px}
+.voices-head{margin-bottom:35px}
+.voice-grid{gap:22px}
+.voice-grid blockquote{padding:29px 28px;min-height:210px;background:#fdfef9}
+.impact{padding-top:100px;padding-bottom:112px}
+.impact .heading{margin-bottom:50px}
+.metric{padding:38px 26px 43px}
+.work-section{padding-top:115px;padding-bottom:125px}
+.work-section .heading{margin-bottom:58px}
+.workrow{padding:58px 0;align-items:center;gap:90px}
+.workrow:nth-of-type(even){grid-template-columns:1fr 1fr}
+.workrow:nth-of-type(even) .proof{background:#edf3eb}
+.workrow h3{max-width:510px}
+.workrow .proof{padding:31px 34px;border-radius:19px}
+#building{padding-top:76px;padding-bottom:120px}
+#building .project{padding:74px 66px;border-radius:28px;gap:55px}
+.about-section{padding-top:120px;padding-bottom:135px}
+.aboutgrid{gap:100px}
+.contact{padding-top:116px;padding-bottom:110px}
+@media(max-width:780px){.workrow{gap:26px}.aboutgrid{gap:30px}#building .project{padding:42px 35px;gap:28px}.voice-grid blockquote{min-height:0}}
+@media(max-width:570px){.chapter-cue{padding:6px 0}.chapter-cue .wrap{align-items:flex-start;padding-top:19px}.chapter-cue span:first-child{font-size:.63rem}.chapter-cue span:last-child{font-size:.71rem;text-align:right}#approach{padding:53px 0 77px}#approach .heading{margin-bottom:30px}#approach .three{gap:14px}#approach .value{padding:27px}.voices{padding:67px 0 74px}.voice-grid{gap:12px}.voice-grid blockquote{padding:23px}.impact{padding:69px 0 77px}.impact .heading{margin-bottom:34px}.metric{padding:26px}.work-section{padding:75px 0 80px}.work-section .heading{margin-bottom:32px}.workrow,.workrow:nth-of-type(even){grid-template-columns:1fr;gap:14px;padding:35px 0}.workrow .proof{padding:24px}#building{padding:58px 0 78px}#building .project{padding:31px 23px}.about-section{padding:79px 0 90px}.aboutgrid{gap:14px}.contact{padding:80px 0}}
