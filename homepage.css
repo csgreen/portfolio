@@ -70,3 +70,21 @@
 .work-facts strong{color:#234e42}
 @media(max-width:780px){.work-feature{gap:24px;padding:20px}.work-feature.reverse .work-feature-copy{padding-left:0}.work-feature-copy h3{font-size:1.7rem}}
 @media(max-width:600px){.work-gallery{gap:18px}.work-feature{grid-template-columns:1fr;padding:14px 14px 26px;gap:22px}.work-feature.reverse .work-art{order:0}.work-feature.reverse .work-feature-copy{order:0}.work-feature-copy{padding:0 10px}.work-art{aspect-ratio:1.7}.work-feature-copy h3{font-size:1.9rem}.work-facts{margin-top:18px}}
+
+/* Flipper Finder portfolio feature */
+.finder-feature{padding-top:10px}
+.finder-project{background:#f0eae0;grid-template-columns:1fr 1fr}
+.finder-project .finder-art{background:#f9fbf7;border:1px solid #d8e3d8;border-radius:19px;padding:23px;min-width:0;box-shadow:0 14px 30px #183c3910}
+.finder-art-head{display:flex;align-items:center;gap:10px;background:white;border:1px solid #d1dfd2;border-radius:40px;padding:10px 15px;color:#527469;font-size:.86rem}
+.finder-search-icon{font-size:1.7rem;line-height:1;font-weight:700}
+.finder-art-results{display:grid;gap:12px;margin-top:18px}
+.finder-art-row{background:white;border:1px solid #e2e8de;border-radius:12px;padding:11px;display:grid;grid-template-columns:70px 1fr 23px;gap:12px;align-items:center}
+.finder-clothing{width:70px;height:65px;border-radius:11px;background:#e4eae8;display:flex;align-items:center;justify-content:center}
+.finder-cream{background:#f1e7db}
+.finder-clothing svg{width:57px;height:55px}
+.finder-art-row strong{display:block;font-size:.92rem;line-height:1.3}
+.finder-art-row small{display:block;color:#6c877b;font-size:.72rem;margin-top:4px}
+.finder-verified{background:#dceee2;border-radius:50%;width:23px;height:23px;display:flex;align-items:center;justify-content:center;color:#3e7858;font-weight:900}
+.finder-art-foot{text-align:center;color:#738879!important;font-size:.75rem!important;margin:15px 0 0!important}
+@media(max-width:780px){.finder-project{grid-template-columns:1fr}}
+@media(max-width:570px){.finder-project .finder-art{padding:15px}.finder-art-row{grid-template-columns:56px 1fr 22px;gap:8px}.finder-clothing{width:56px;height:55px}.finder-clothing svg{width:48px}}
