@@ -144,3 +144,21 @@
 @media(max-width:850px){.current-lead{grid-template-columns:1fr;gap:18px}.leadership-views{gap:25px}.enterprise-item{grid-template-columns:130px 1fr;gap:25px}.enterprise-marker{width:124px;height:124px}}
 @media(max-width:650px){.director-hero{padding:48px 0 28px}.director-hero .hero-intro{gap:20px;align-items:flex-start}.director-hero h1{font-size:clamp(2.8rem,11vw,4.3rem)}.director-hero .hero-portrait{width:110px;height:138px}.director-hero .lede{font-size:1.03rem}.director-hero .hero-sub{font-size:.96rem}.director-metrics,.leadership-views{grid-template-columns:1fr}.director-metrics>div{padding:23px}.approach-director,.director-work,.current-section{padding:73px 0}.enterprise-item{grid-template-columns:1fr;gap:14px}.enterprise-marker{width:100px;height:100px}.enterprise-marker strong{font-size:1.9rem}.gap-illustration{grid-template-columns:1fr;gap:8px}.gap-illustration>div{min-height:100px;padding:20px}.selected-projects{padding:70px 0 0}.finder-feature{padding-top:25px;padding-bottom:65px}.compact-project{padding:40px 0 75px}.about-section{padding:78px 0}}
 @media(max-width:390px){.director-hero .hero-portrait{width:88px;height:111px}.director-hero h1{font-size:2.6rem}}
+
+/* Green and Sound Collective: founder-led operating-model case study */
+.collective-feature{padding:88px 0 72px;background:#f4f5ed}
+.collective-feature-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:65px;align-items:center}
+.collective-copy h2{font-size:clamp(2rem,3.8vw,3.3rem);line-height:1.13;max-width:650px;margin:16px 0 22px}
+.collective-copy>p:not(.eyebrow):not(.small){color:var(--muted);font-size:1.06rem;max-width:600px}
+.collective-copy .textlink{display:inline-block;margin-top:7px}
+.collective-visual{padding:26px;border:1px solid #d4dfd4;background:#e8eee5;border-radius:23px;box-shadow:0 12px 30px #183c390b}
+.collective-step{background:#fffefa;border:1px solid #d6e2d6;border-radius:16px;padding:18px 24px}
+.collective-step span{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;font-weight:850;color:#af755f}
+.collective-step strong{display:block;font-size:1.28rem;letter-spacing:-.03em;line-height:1.25;margin:8px 0}
+.collective-step small{display:block;font-size:.82rem;color:#6c8577}
+.collective-step.highlight{background:#2a6051;border-color:#2a6051;color:#fff}
+.collective-step.highlight span{color:#e5ba9d}
+.collective-step.highlight small{color:#d5e9dc}
+.collective-connector{text-align:center;font-size:1.4rem;font-weight:850;color:#829f90;line-height:1.5}
+@media(max-width:850px){.collective-feature-grid{gap:29px}}
+@media(max-width:650px){.collective-feature{padding:66px 0}.collective-feature-grid{grid-template-columns:1fr}.collective-visual{padding:17px}.collective-step{padding:16px 20px}}
