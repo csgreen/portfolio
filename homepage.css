@@ -88,3 +88,59 @@
 .finder-art-foot{text-align:center;color:#738879!important;font-size:.75rem!important;margin:15px 0 0!important}
 @media(max-width:780px){.finder-project{grid-template-columns:1fr}}
 @media(max-width:570px){.finder-project .finder-art{padding:15px}.finder-art-row{grid-template-columns:56px 1fr 22px;gap:8px}.finder-clothing{width:56px;height:55px}.finder-clothing svg{width:48px}}
+
+/* 2026 director-level editorial redesign: evidence and decisions before slogans */
+.navlinks{gap:21px}.navlinks a{font-size:.79rem}
+.director-hero{padding:72px 0 42px}
+.director-hero .hero-intro{align-items:center;max-width:none;gap:65px;margin-top:0}
+.director-hero h1{max-width:850px;font-size:clamp(3rem,6.7vw,6.2rem);margin:0 0 24px}
+.director-hero .hero-intro-copy{max-width:760px}
+.director-hero .lede{font-size:clamp(1.13rem,2vw,1.43rem);line-height:1.55;color:#3f6055}
+.director-hero .hero-sub{max-width:675px;font-size:1.06rem;line-height:1.7}
+.director-hero .hero-portrait{width:210px;height:263px;object-fit:contain}
+.director-hero .buttons{margin-top:32px}
+.director-hero .signature{font-size:.9rem;letter-spacing:.05em;font-weight:650;color:#6c8a77;border-top:1px solid var(--line);padding-top:23px;margin-top:48px;font-style:italic}
+.director-impact{padding:85px 0 95px}.director-impact h2{max-width:800px;margin:10px 0 38px}
+.director-metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.director-metrics>div{padding:33px 37px;background:#fdfef9;border:1px solid #d2dfd4;border-radius:18px}
+.director-metrics strong{font-size:clamp(2.2rem,4vw,3.6rem);letter-spacing:-.06em;line-height:1.05;display:block;color:#2d6a58}
+.director-metrics p{max-width:350px;color:#546d60;margin:15px 0 0}
+.approach-director{padding:105px 0}.approach-director h2{margin:10px 0 36px}
+.leadership-views{display:grid;grid-template-columns:1fr 1fr;gap:55px}
+.leadership-views article{border-top:3px solid var(--green);padding-top:28px}
+.leadership-views article:nth-child(2){border-top-color:var(--terra)}
+.leadership-views .view-mark{font-size:.75rem;letter-spacing:.16em;text-transform:uppercase;font-weight:850;color:var(--green)}
+.leadership-views h3{font-size:clamp(1.6rem,2.8vw,2.45rem);margin:18px 0}
+.leadership-views p{color:var(--muted);font-size:1.08rem;max-width:480px}
+.leadership-views a,.enterprise-item a,.compact-project a{font-weight:750;color:var(--green);text-decoration:none;border-bottom:1px solid #94b5a5;padding-bottom:3px}
+.director-work{padding:108px 0}.director-work h2{margin:9px 0 15px}.director-intro{font-size:1.1rem;color:var(--muted);max-width:690px}
+.enterprise-list{margin-top:38px}
+.enterprise-item{border-top:1px solid var(--line);display:grid;grid-template-columns:190px 1fr;gap:45px;padding:42px 0}
+.enterprise-item:last-child{border-bottom:1px solid var(--line)}
+.enterprise-marker{width:166px;height:166px;border-radius:50%;background:#e9efe5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.enterprise-item:nth-child(even) .enterprise-marker{background:#f3e7dc}
+.enterprise-marker strong{font-size:clamp(2rem,3.6vw,3rem);line-height:1.1;letter-spacing:-.055em}
+.enterprise-marker span{font-size:.73rem;text-transform:uppercase;letter-spacing:.12em;color:#6b8175;margin-top:7px;font-weight:850}
+.enterprise-item .eyebrow{margin:4px 0 14px}.enterprise-item h3{font-size:clamp(1.7rem,3vw,2.5rem);margin-bottom:12px}
+.enterprise-item p:not(.eyebrow){color:var(--muted);max-width:710px;margin-bottom:15px}
+.enterprise-note{padding-top:23px;font-size:.92rem;color:var(--muted);max-width:900px}
+.current-section{background:#eaf1e9;padding:110px 0}
+.current-lead{display:grid;grid-template-columns:1fr 1fr;gap:65px}
+.current-lead h2{margin:10px 0 25px}.current-lead p{font-size:1.08rem;color:#4b695d}
+.gap-illustration{display:grid;grid-template-columns:1fr 1.18fr 1fr;gap:12px;align-items:stretch;margin:42px 0 21px}
+.gap-illustration>div{border-radius:18px;background:#fcfdf8;padding:26px;min-height:168px;display:flex;flex-direction:column;justify-content:center}
+.gap-illustration span{font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#698578}
+.gap-illustration strong{font-size:1.5rem;letter-spacing:-.04em;line-height:1.18;margin:10px 0}
+.gap-illustration small{font-size:.85rem;color:var(--muted)}
+.gap-illustration .bridge{background:#28594d;color:#fff;align-items:center;text-align:center}
+.gap-illustration .bridge span{color:#b9d5c6}.gap-illustration .bridge strong{font-size:1.42rem}
+.current-foot{max-width:850px;color:#516e62;font-size:1.02rem}
+.selected-projects{padding:90px 0 0;border:0}.selected-projects h2{margin:10px 0}
+.finder-feature{padding-top:42px;padding-bottom:80px}
+.compact-project{padding:55px 0 92px}.compact-project h3{font-size:clamp(1.5rem,2.8vw,2.35rem);margin:10px 0}
+.compact-project p{max-width:850px;color:var(--muted)}
+.about-section{background:#fafaf6;padding:110px 0}.aboutgrid{gap:95px}
+.contact{padding:112px 0}.contact-email{font-size:.85rem!important;color:#a9c8b7!important}
+@media(max-width:850px){.current-lead{grid-template-columns:1fr;gap:18px}.leadership-views{gap:25px}.enterprise-item{grid-template-columns:130px 1fr;gap:25px}.enterprise-marker{width:124px;height:124px}}
+@media(max-width:650px){.director-hero{padding:48px 0 28px}.director-hero .hero-intro{gap:20px;align-items:flex-start}.director-hero h1{font-size:clamp(2.8rem,11vw,4.3rem)}.director-hero .hero-portrait{width:110px;height:138px}.director-hero .lede{font-size:1.03rem}.director-hero .hero-sub{font-size:.96rem}.director-metrics,.leadership-views{grid-template-columns:1fr}.director-metrics>div{padding:23px}.approach-director,.director-work,.current-section{padding:73px 0}.enterprise-item{grid-template-columns:1fr;gap:14px}.enterprise-marker{width:100px;height:100px}.enterprise-marker strong{font-size:1.9rem}.gap-illustration{grid-template-columns:1fr;gap:8px}.gap-illustration>div{min-height:100px;padding:20px}.selected-projects{padding:70px 0 0}.finder-feature{padding-top:25px;padding-bottom:65px}.compact-project{padding:40px 0 75px}.about-section{padding:78px 0}}
+@media(max-width:390px){.director-hero .hero-portrait{width:88px;height:111px}.director-hero h1{font-size:2.6rem}}
