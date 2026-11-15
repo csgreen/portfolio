@@ -5,3 +5,17 @@
 /* Existing detailed diagrams keep their layout but share the warm neutral palette. */
 .photo-pile,.mock,.mock-search,.mock-upload,.mock-review,.snapshot,.search-bar,.result-line,.tile,.roadmap,.collective-step{border-color:var(--line)!important}
 @media(max-width:680px){.wrap,.case-shell{padding:0 22px}.case-nav{min-height:70px}.case-brand{font-size:1.5rem}.case-hero{padding:48px 0}.case-next{align-items:flex-start;flex-direction:column}.case-section{padding:42px 0}.case-facts{gap:24px}.case-facts strong{font-size:2.4rem}}
+
+/* A single recognizable evidence note on every story */
+.evidence-scope{border-top:1px solid var(--line);padding:42px 0 50px;background:var(--bg)}
+.evidence-scope h2{font-size:clamp(1.6rem,2.8vw,2.2rem);margin:8px 0 13px}
+.evidence-scope p:last-child{max-width:790px;color:var(--muted);font-size:.97rem;line-height:1.7}
+.case-next{background:var(--bg)}
+.case-label,.eyebrow{color:var(--muted)!important}
+.case-footer{background:var(--navy)}
+.case-header+.wrap>.nav{display:none}
+a:not(.case-button){text-decoration-color:var(--coral)}
+a.line-link,a.textlink,.section a:not(.case-button){text-decoration-color:var(--coral)}
+.pulse strong,.pulse strong span,.metrics strong,.metric strong,.stat strong{color:var(--navy)!important;font-family:'DM Serif Display',Georgia,serif!important}
+.pulse article,.phase,.judgment,.privacy-grid article,.outcome-grid article,.panel,.pane,.step,.bottom-card,.card,.fact{border-radius:4px!important}
+.ai-lead{background:var(--navy)!important}
