@@ -92,3 +92,24 @@ footer .shell{color:#d6dbe5}
 .voices-grid figure{padding:31px 0 32px;border-bottom:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between}
 .voices-grid blockquote{font-size:clamp(1.2rem,1.75vw,1.6rem)}
 @media(max-width:620px){.voices-section{padding:65px 0}.voices-heading{grid-template-columns:1fr;gap:15px;margin-bottom:30px}.voices-grid{grid-template-columns:1fr}.voice-feature blockquote{font-size:clamp(1.9rem,7.3vw,2.5rem)}.voices-grid blockquote{font-size:1.35rem}}
+
+/* Consulting options follow leadership work, using the existing editorial system. */
+.hero-availability{margin:18px 0 0;color:var(--muted);font-size:.86rem;line-height:1.6;max-width:580px}
+.engagements-section{padding:94px 0;background:var(--bg);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.engagements-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(270px,.65fr);gap:9%;align-items:end;margin-bottom:42px}
+.engagements-heading h2{max-width:710px;margin-bottom:0;text-wrap:balance}
+.engagements-heading>p{max-width:420px;margin:0;color:var(--muted)}
+.engagements-list{border-top:1px solid var(--navy)}
+.engagement{display:grid;grid-template-columns:100px minmax(0,1fr) 175px;gap:28px;padding:31px 4px;border-bottom:1px solid var(--line);align-items:start}
+.engagement-index{font-size:.78rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.04em;padding-top:6px}
+.engagement-copy h3{font-size:clamp(1.45rem,2.2vw,2rem);margin:0 0 10px}
+.engagement-copy p{color:var(--muted);font-size:.96rem;line-height:1.65;margin:0;max-width:650px}
+.engagement-meta{display:flex;flex-direction:column;gap:17px;align-items:flex-start;padding-top:6px;font-size:.83rem}
+.engagement-meta>span{color:var(--muted)}
+.engagement-meta a{font-weight:700;color:var(--blue);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--line)}
+.engagement-meta a:hover{text-decoration-color:var(--coral)}
+.engagements-bottom{display:flex;align-items:center;justify-content:space-between;gap:35px;padding-top:28px}
+.engagements-bottom p{max-width:720px;color:var(--muted);margin:0;font-size:.94rem}
+.engagements-bottom a{white-space:nowrap;font-size:.93rem}
+@media(max-width:850px){.engagements-heading{gap:5%}.engagement{grid-template-columns:85px minmax(0,1fr);gap:14px 22px}.engagement-meta{grid-column:2;flex-direction:row;flex-wrap:wrap;gap:10px 22px;padding-top:0}}
+@media(max-width:620px){.engagements-section{padding:65px 0}.engagements-heading{grid-template-columns:1fr;gap:18px;margin-bottom:28px}.engagement{grid-template-columns:1fr;gap:8px;padding:25px 4px}.engagement-index,.engagement-meta{grid-column:1}.engagement-meta{margin-top:4px;flex-direction:column;gap:10px}.engagements-bottom{flex-direction:column;align-items:flex-start;gap:17px}.hero-availability{font-size:.82rem}}
